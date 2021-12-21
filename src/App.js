@@ -1,9 +1,9 @@
-import { Typography, Divider } from 'antd';
-import './App.css';
-import TodoList from './components/TodoList';
-import Filters from './components/Filters';
+import { Typography, Divider } from 'antd'
+import './App.css'
+import TodoList from './components/TodoList'
+import Filters from './components/Filters'
 
-const { Title } = Typography;
+const { Title } = Typography
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         boxShadow: '0 0 10px 4px #bfbfbf',
         borderRadius: 5,
         height: '90vh',
+        maxWidth: '100%'
       }}
     >
       <Title style={{ textAlign: 'center' }}>TODO APP with REDUX</Title>
@@ -25,7 +26,7 @@ function App() {
       <Divider />
       <TodoList />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
