@@ -20,7 +20,9 @@ const store = configureStore({
     filters: filterSlice.reducer,
     todoList: todoListSlice.reducer
   },
-  preloadedState: todos
+  preloadedState: {
+    todoList: todos
+  }
 })
 store.subscribe(() => {
   localStorage.setItem('todoState', JSON.stringify(store.getState().todoList))
