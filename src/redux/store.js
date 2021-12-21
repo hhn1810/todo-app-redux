@@ -23,6 +23,6 @@ const store = configureStore({
   preloadedState: todos
 })
 store.subscribe(() => {
-  localStorage.setItem('todoState', JSON.stringify(store.getState()))
+  localStorage.setItem('todoState', JSON.stringify(store.getState().todoList))
 })
 export default store
